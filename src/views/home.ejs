@@ -48,6 +48,7 @@
                 <th>Email</th>
                 <th>Name</th>
                 <th>City</th>
+                <th>Actions</th>
             </tr>
             <ul>
                 <% listUsers.forEach(function(user) { %>
@@ -65,7 +66,7 @@
                             <%= user.city %>
                         </td>
                         <td>
-                            <button>Edit</button>
+                            <a href="/update/<%= user.id %>">Edit</a>
                             <button>Delete</button>
                         </td>
                     </tr>
